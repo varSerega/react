@@ -1,4 +1,8 @@
 import Header from "./Components/Header"
+import WaitToTeach from "./Components/WayToTeach"
+import  { ways } from './data'
+
+
 
 
 export default  function App() {
@@ -11,25 +15,17 @@ export default  function App() {
           <section>
           <h1>Наш подход к обучению</h1>
           <ul>
-            <li>
-              <p>
-                <strong>
-                  Мы используем 
-                </strong>современные методики обучения, которые помогают
-                  студентам быстрее усваивать материал и применять его на практике.
-              </p>
-            </li>
-             <li>
-              <p>
-                <strong>
-                  Мы используем 
-                </strong>современные методики обучения, которые помогают
-                  студентам быстрее усваивать материал и применять его на практике.
-              </p>
-            </li>
-            
+           <WaitToTeach  {...ways[0]} />
+           <WaitToTeach  {...ways[1]} />
+    
           
           </ul>
+          </section>
+
+          <section>
+            <h3>
+              Чем мы отличаемся от других учебных заведений?
+            </h3>
           </section>
           </main>
        
